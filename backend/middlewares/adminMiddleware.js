@@ -1,12 +1,9 @@
 const adminMiddleware = (req, res, next) => {
-    const user = req.session.user;
-  
-    if (user && user.role === 'admin') {
-      return next();
-    }
-  
-    return res.status(403).json({ message: 'Accesso negato: solo gli amministratori possono eseguire questa azione' });
-  };
-  
-  export default adminMiddleware;
-  
+  if (req.user && req.user.role === 'admin') {
+    next(); // Procedi se l'utente è admin
+  } else {
+    res.status(403).json({ message: 'Accesso negato. Solo gli admin possono eseguire questa azione.' });
+  }
+};
+
+export default adminMiddleware;

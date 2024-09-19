@@ -1,6 +1,6 @@
 import express from 'express';
 import { body } from 'express-validator';
-import { registerUser, loginUser } from '../controllers/userController.js';
+import { registerUser, loginUser, logoutUser, checkSession } from '../controllers/userController.js';
 import rateLimit from 'express-rate-limit';
 
 const router = express.Router();
@@ -32,5 +32,11 @@ router.post(
   ],
   loginUser
 );
+
+// Rotta di logout
+router.post('/logout', logoutUser);
+
+// Rotta per verificare la sessione
+router.get('/check-session', checkSession);
 
 export default router;
