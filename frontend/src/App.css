@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.navbar-brand {
+    font-family: "Playwrite AR", cursive;
+}
+
+
+
+.navbar {
+    border-radius: 5px;
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, #107A92  15%, #09B4C6 100%); /* Colore di sfondo del contenitore */
+}
+
+/* elimino le caratteristiche di default del tag a */
+a {
+    text-decoration: none !important; /* Rimuove la sottolineatura */
+    color: inherit !important;        /* In questo caso eredita il colore del contenitore */
+    /* Oppure puoi usare un colore specifico */
+    /* color: #000; */    /* Cambia colore a nero, per esempio */
+}
+
+/* Esempio per cambiare il colore quando si passa il mouse sul link */
+a:hover {
+    color: #004fa4 !important;       /* Cambia colore al passaggio del mouse */
+}
+
+.conteiner-hero p{
+    margin: 30px 0;
+}
+
+.logo-hero {
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    margin: 30px 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;           /* L'altezza sarà l'intera altezza della viewport */
+
+}
+
+
+.first-div {
+    background-image: url("./assets/swordfish.jpg");
+    margin-right: 20px;      /* Distanza tra la prima div e le immagini laterali */
+    height: 100%;
+    margin-left: 50px;
+    background-size: cover; /* Copre l'intero elemento mantenendo il rapporto di aspetto */
+    background-position: center; /* Centra l'immagine orizzontalmente e verticalmente */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+    border-radius: 10px;
+
+}
+
+.first-div h2 {
+    font-size: large;
+    font-weight: 600;               /* Colore del testo per contrastare l'immagine (modifica secondo necessità) */
+    font-size: 50px;             /* Dimensione del testo (modifica secondo necessità) */
+    border-radius: 10px;
+    -webkit-text-stroke: 3px white;
+    color: transparent;
+}
+
+.first-div label, .first-div p {
+    color: white;
+    font-weight: 800;
+    font-size: large;
+}
+
+.side-image-container {
+    display: flex;
+    flex-direction: column;   /* Dispone le immagini in verticale */
+    align-items: baseline;
+    height: 100%;             /* Occupa l'intera altezza disponibile */
+    width: 100%;
+
+}
+
+
+.side-image-one {
+
+    height: 50%;
+    width: 90%;
+    border-radius: 10px;
+    background-image: url("./assets/insalata-mare.jpg");
+    background-size: cover; /* Copre l'intero elemento mantenendo il rapporto di aspetto */
+    background-position: center; /* Centra l'immagine orizzontalmente e verticalmente */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+}
+
+.side-image-two {
+    height: 50%;
+    width: 90%;
+    border-radius: 10px;
+    background-image: url("./assets/pescato.jpg");
+    background-size: cover; /* Copre l'intero elemento mantenendo il rapporto di aspetto */
+    background-position: center; /* Centra l'immagine orizzontalmente e verticalmente */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+}
+
+.side-image-container div:first-of-type {
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.side-image-container div:nth-of-type(2) {
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.contenitore-hp {
+    width: 100%;
+    height: 100%;
+
+    display: flex;               /* Attiva Flexbox */
+    justify-content: center;     /* Centra orizzontalmente */
+    align-items: center;         /* Centra verticalmente */
+    text-align: center;          /* Assicura che il testo sia centrato */
+    color: transparent;
+    font-size: large;
+    font-weight: 600;               /* Colore del testo per contrastare l'immagine (modifica secondo necessità) */
+    font-size: 50px;             /* Dimensione del testo (modifica secondo necessità) */
+    border-radius: 10px;
+    -webkit-text-stroke: 3px white;
+
+}
+
+
+
+
+
+.hook-container {
+    background-image: url("./assets/fishing-hook.png");
+}
+
+.info-base {
+    margin-bottom: 50px;
+}
+
+.pre-footer {
+    margin-bottom: 100px;
+}
+
+.info-base img {
+    width: 20%;
+    height: 30%;
+}
+
+.image-pack-one, .image-pack-two, .image-pack-three, .image-pack-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra l'immagine e gli altri contenuti orizzontalmente */
+    text-align: center; /* Centra il testo all'interno del contenitore */
+}
+
+.image-pack-one img, .image-pack-two img, .image-pack-three img, .image-pack-four img {
+    margin-bottom: 10px; /* Spazio sotto l'immagine, opzionale */
+}
+
+
+
+.anchor-list {
+    list-style-type: none; /* Rimuove i bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.anchor-list li {
+    margin-bottom: 10px; /* Spazio tra gli elementi della lista */
+}
+
+.link-container {
+    padding: 10px;
+    background: linear-gradient(90deg, #107A92  15%, #09B4C6 100%); /* Colore di sfondo del contenitore */
+    border-radius: 5px;
+    color: white;
+}
+
+.mini-footer-two p{
+    padding: 10px;
+    background: linear-gradient(90deg, #107A92  15%, #09B4C6 100%); /* Colore di sfondo del contenitore */
+    border-radius: 5px;
+    color: white;
+}
+
+.link-one, .link-two, .link-three {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: #007bff; /* Colore del link */
+    font-size: 16px;
+}
+
+.link-one:hover, .link-two:hover, .link-three:hover {
+    color: rgba(0,212,255,1); /* Cambia colore al passaggio del mouse */
+}
+
+.wave-container {
+    position: relative;
+    width: 100%;  /* Larghezza del contenitore */
+    height: 200px; /* Altezza del contenitore */
+    /* overflow: hidden; */
+    overflow-x: hidden;
+
+}
+
+
+
+.wave-1, .wave-2 {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 110%; /* Assicurati che l'immagine sia abbastanza larga per coprire il movimento */
+    height: 150px;
+}
+
+.wave-1 {
+    bottom:50px;
+    animation: wave-animation 2s infinite linear, wave-up-down 5s infinite ease-in-out;
+
+}
+
+.wave-2{
+    box-shadow: 0px 20px 15px 7px #09B4C6;
+    animation: wave-animation 2s infinite linear, wave-up-down 5s infinite ease-in-out;
+}
+
+.logo-footer  img{
+
+    background-size: cover; /* Copre l'intero elemento mantenendo il rapporto di aspetto */
+    background-position: center; /* Centra l'immagine orizzontalmente e verticalmente */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes wave-up-down {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Modifica l'altezza dell'onda */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* CSS DELLA PAGINA GALLERY */
+
+/* Stili per la galleria */
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 250px; /* Imposta un'altezza fissa per tutte le immagini */
+    object-fit: cover; /* Fa sì che le immagini riempiano il contenitore mantenendo il rapporto d'aspetto */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: block;
+  }
+
+  /* Il resto del corpo della card si adatterà */
+.product-card .card-body {
+    flex-grow: 1; /* Fa crescere il contenuto per riempire lo spazio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra il testo verticalmente */
+    text-align: center;
+  }
+
+  /* Mantieni le card con altezza uniforme */
+.product-card {
+    height: 100%; /* Assicura che tutte le card abbiano la stessa altezza */
+    display: flex;
+    flex-direction: column;
+  }
+
+.product-overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+text-align: center;
+padding: 10px;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+opacity: 1; /* Mostra l'overlay al passaggio del mouse */
+}
+
+/* Stili per il lightbox */
+.lightbox {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.8); /* Sfondo offuscato */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.lightbox-content {
+position: relative;
+}
+
+.lightbox-image {
+max-width: 80vw;
+max-height: 80vh;
+border-radius: 8px;
+}
+
+.close-button {
+position: absolute;
+top: 10px;
+right: 20px;
+font-size: 30px;
+color: white;
+cursor: pointer;
+}
+
+.close-button:hover {
+color: red;
+}
+
+/* STILIZZAZIONE PAGINA DELLE RICETTE */
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body-two p {
+    font-size: 1rem;
+}
+
+/* STILI BOTTONE WA */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px 20px; /* Aggiunge più spazio interno per una dimensione maggiore */
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #28a745; /* Colore hover leggermente diverso */
+  }
+  
+  .whatsapp-icon {
+    width: 40px; /* Aumenta la larghezza dell'icona */
+    height: 40px; /* Aumenta l'altezza dell'icona */
+    margin-right: 10px; /* Spazio tra l'icona e il testo */
+  }
+  
+  .whatsapp-text {
+    font-size: 1.5rem; /* Testo più grande per essere ben visibile */
+  }
+  
